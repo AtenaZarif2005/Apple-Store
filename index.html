@@ -1,195 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
 
-</head>
-<body>
-    <header>
-        <div class="container-wrapper">
-            <div class="header-inner">
-                <div class="menu-toggle">☰</div>
-                <a href="#" class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#e3e3e3"><path d="M160-600v-80h80v80h-80Zm0 320v-240h80v240h-80Zm280 0h-80q-33 0-56.5-23.5T280-360v-240q0-33 23.5-56.5T360-680h80q33 0 56.5 23.5T520-600v240q0 33-23.5 56.5T440-280Zm-80-80h80v-240h-80v240Zm200 80v-80h160v-80h-80q-33 0-56.5-23.5T560-520v-80q0-33 23.5-56.5T640-680h160v80H640v80h80q33 0 56.5 23.5T800-440v80q0 33-23.5 56.5T720-280H560Z"/></svg></a>
-                <nav class="navlinks">
-                    <a href="#">Store</a>
-                    <a href="#">Mac</a>
-                    <a href="#">iphone</a>
-                    <a href="#">ipad</a>
-                    <a href="#">Whatch</a>
-                    <a href="#">Airpods</a>
-                    <a href="#">Vision</a>
-                </nav>
-                <div class="header-actions">
+    </head>
+    <body>
+        <header>
+            <div class="container-wrapper">
+                <div class="header-inner">
+                    <input type="checkbox" id="menu-toggle"
+                        class="menu-checkbox">
+                    <label for="menu-toggle" class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <a href="#" class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="35" fill="#e3e3e3"><path d="M160-600v-80h80v80h-80Zm0 320v-240h80v240h-80Zm280 0h-80q-33 0-56.5-23.5T280-360v-240q0-33 23.5-56.5T360-680h80q33 0 56.5 23.5T520-600v240q0 33-23.5 56.5T440-280Zm-80-80h80v-240h-80v240Zm200 80v-80h160v-80h-80q-33 0-56.5-23.5T560-520v-80q0-33 23.5-56.5T640-680h160v80H640v80h80q33 0 56.5 23.5T800-440v80q0 33-23.5 56.5T720-280H560Z" /></svg></a>
+                    <nav class="navlinks">
+                        <a href="#">Store</a>
+                        <a href="#">Mac</a>
+                        <a href="#">iphone</a>
+                        <a href="#">ipad</a>
+                        <a href="#">Whatch</a>
+                        <a href="#">Airpods</a>
+                        <a href="#">Vision</a>
+                    </nav>
                     <a href="#" class="search-icon"></a>
-                    <a href="#">Sign in</a>
-                    <a href="#">Join</a>
+                    <div class="header-actions">
+                        <a href="#">Sign in</a>
+                        <a href="#">Join</a>
+                    </div>
+                    <nav class="navbar-menu">
+                        <ul class="nav-links-menu">
+                            <li><a href="#">Store</a></li>
+                            <li><a href="#">Mac</a></li>
+                            <li><a href="#">iphone</a></li>
+                            <li><a href="#">ipad</a></li>
+                            <li><a href="#">Whatch</a></li>
+                            <li><a href="#">Airpods</a></li>
+                            <li><a href="#">Vision</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="main-banner">
-        <div class="container-wrapper">
-            <div class="banner-content">
-                <h1>iPhone 17 Pro Max</h1>
-                <p>Titanium, So strong, So light, So Pro</p>
-                <div class="banner-links">
-                    <a href="#">Learn More > </a>
-                    <a href="#">Buy > </a>
+        </header>
+        <section class="main-banner">
+            <div class="container-wrapper">
+                <div class="banner-content">
+                    <h1>iPhone 17 Pro Max</h1>
+                    <p>Titanium, So strong, So light, So Pro</p>
+                    <div class="banner-links">
+                        <a href="#">Learn More > </a>
+                        <a href="#">Buy > </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section> 
-    <section class="content-section">
-        <div class="container-wrapper">
-            <h2 class="section-title">The Latest, Take a look at what's new.</h2>
-            <div class="slider-container">
-                <div class="product-card">
-                    <img src="image/iphone18promax.jpg" alt="">
-                    <span class="card-category">phone</span>
-                    <h3 class="card-title">iPhone 18 Pro Max</h3>
-                    <span class="card-price">from $ 1,54,900</span>
-                </div>
-                <div class="product-card">
-                    <img src="image/macbook.jpg" alt="">
-                    <span class="card-category">Mac</span>
-                    <h3 class="card-title">MacBook</h3>
-                    <span class="card-price">from $ 58.25</span>
-                </div>
-                <div class="product-card">
-                    <img src="image/applewatch11.jpg" alt="">
-                    <span class="card-category">Watch</span>
-                    <h3 class="card-title">Apple whatch 11</h3>
-                    <span class="card-price">from $ 33.25</span>
-                </div>
-                <div class="product-card">
-                    <img src="image/ipadairm4.jpg" alt="">
-                    <span class="card-category">iPad Air</span>
-                    <h3 class="card-title">iPad Air M4</h3>
-                    <span class="card-price">from $ 79.08</span>
-                </div>
-                <div class="product-card">
-                    <img src="image/airpadspro.jpg" alt="">
-                    <span class="card-category">AirPads</span>
-                    <h3 class="card-title">AirPads pro</h3>
-                    <span class="card-price">from $ 40.08</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="content-section">
-        <div class="container-wrapper">
-            <h2 class="section-title">Explore More</h2>
-            <div class="promo-grid">
-                <div class="promo-box">
-                    <img src="image/more1.jpg" alt="">
-                </div>
-                <div class="promo-box">
-                    <img src="image/more2.jpg" alt="">
-                </div>
-                <div class="promo-box">
-                    <img src="image/more3.jpg" alt="">
-                </div>
-                <div class="promo-box">
-                    <img src="image/more4.jpg" alt="">
+        </section>
+        <section class="content-section">
+            <div class="container-wrapper">
+                <h2 class="section-title">The Latest, Take a look at what's
+                    new.</h2>
+                <div class="slider-container">
+                    <div class="product-card">
+                        <img src="image/iphone18promax.jpg" alt>
+                        <span class="card-category">phone</span>
+                        <h3 class="card-title">iPhone 18 Pro Max</h3>
+                        <span class="card-price">from $ 1,54,900</span>
+                    </div>
+                    <div class="product-card">
+                        <img src="image/macbook.jpg" alt>
+                        <span class="card-category">Mac</span>
+                        <h3 class="card-title">MacBook</h3>
+                        <span class="card-price">from $ 58.25</span>
+                    </div>
+                    <div class="product-card">
+                        <img src="image/applewatch11.jpg" alt>
+                        <span class="card-category">Watch</span>
+                        <h3 class="card-title">Apple whatch 11</h3>
+                        <span class="card-price">from $ 33.25</span>
+                    </div>
+                    <div class="product-card">
+                        <img src="image/ipadairm4.jpg" alt>
+                        <span class="card-category">iPad Air</span>
+                        <h3 class="card-title">iPad Air M4</h3>
+                        <span class="card-price">from $ 79.08</span>
+                    </div>
+                    <div class="product-card">
+                        <img src="image/airpadspro.jpg" alt>
+                        <span class="card-category">AirPads</span>
+                        <h3 class="card-title">AirPads pro</h3>
+                        <span class="card-price">from $ 40.08</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="content-section">
-    <div class="container-wrapper">
+        </section>
+        <section class="content-section">
+            <div class="container-wrapper">
+                <h2 class="section-title">Explore More</h2>
+                <div class="promo-grid">
+                    <div class="promo-box">
+                        <img src="image/more1.jpg" alt>
+                    </div>
+                    <div class="promo-box">
+                        <img src="image/more2.jpg" alt>
+                    </div>
+                    <div class="promo-box">
+                        <img src="image/more3.jpg" alt>
+                    </div>
+                    <div class="promo-box">
+                        <img src="image/more4.jpg" alt>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="container-wrapper">
 
-        <h2 class="section-title">Helpful Tips</h2>
+                <h2 class="section-title">Helpful Tips</h2>
 
-        <div class="article-grid">
+                <div class="article-grid">
 
-            <div class="article-card">
-                <div class="article-text">
-                    <h3 class="article-title">The Difference Between iOS 17 and iOS 18</h3>
-                    <p class="article-summery">
-                        Every iOS update promises something new, but does iOS 18 truly outperform iOS 17? Let's explore the key differences.
-                    </p>
-                </div>
+                    <div class="article-card">
+                        <div class="article-text">
+                            <h3 class="article-title">The Difference Between iOS
+                                17 and iOS 18</h3>
+                            <p class="article-summery">
+                                Every iOS update promises something new, but
+                                does iOS 18 truly outperform iOS 17? Let's
+                                explore the key differences.
+                            </p>
+                        </div>
 
-                <div class="article-img">
-                    <img src="image/article1.jpg" alt="iOS 17 vs iOS 18">
+                        <div class="article-img">
+                            <img src="image/article1.jpg"
+                                alt="iOS 17 vs iOS 18">
+                        </div>
+                    </div>
+
+                    <div class="article-card">
+                        <div class="article-text">
+                            <h3 class="article-title">iPhone Cameras Power</h3>
+                            <p class="article-summery">
+                                The iPhone camera keeps evolving with every
+                                generation, delivering sharper photos, smarter
+                                processing, and professional-quality results in
+                                every shot.
+                            </p>
+                        </div>
+
+                        <div class="article-img">
+                            <img src="image/article2.jpg" alt="iPhone Camera">
+                        </div>
+                    </div>
+
+                    <div class="article-card">
+                        <div class="article-text">
+                            <h3 class="article-title">Apple Watch Features</h3>
+                            <p class="article-summery">
+                                Apple Watch offers powerful health tracking,
+                                fitness monitoring, smart notifications,
+                                emergency safety features, seamless
+                                connectivity, and convenient everyday tools.
+                            </p>
+                        </div>
+
+                        <div class="article-img">
+                            <img src="image/article3.jpg" alt="Apple Watch">
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="article-card">
-                <div class="article-text">
-                    <h3 class="article-title">iPhone Cameras Power</h3>
-                    <p class="article-summery">
-                        The iPhone camera keeps evolving with every generation, delivering sharper photos, smarter processing, and professional-quality results in every shot.
-                    </p>
+        </section>
+        <footer>
+            <div class="container-wrapper">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h4>Shop & Learn</h4>
+                        <ul>
+                            <li><a href="#">Store</a></li>
+                            <li><a href="#">iPad</a></li>
+                            <li><a href="#">iPhone</a></li>
+                            <li><a href="#">Mac</a></li>
+                            <li><a href="#">Watch</a></li>
+                            <li><a href="#">AirPads</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Account</h4>
+                        <ul>
+                            <li><a href="#">Manage your Apple ID</a></li>
+                            <li><a href="#">Apple Store Account</a></li>
+                            <li><a href="#">iCloud.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Apple Values</h4>
+                        <ul>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Enviroment</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>About Apple</h4>
+                        <ul>
+                            <li><a href="#">Newscroom</a></li>
+                            <li><a href="#">Career Opportunities</a></li>
+                            <li><a href="#">Investore</a></li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="article-img">
-                    <img src="image/article2.jpg" alt="iPhone Camera">
-                </div>
-            </div>
-
-            <div class="article-card">
-                <div class="article-text">
-                    <h3 class="article-title">Apple Watch Features</h3>
-                    <p class="article-summery">
-                        Apple Watch offers powerful health tracking, fitness monitoring, smart notifications, emergency safety features, seamless connectivity, and convenient everyday tools.
-                    </p>
-                </div>
-
-                <div class="article-img">
-                    <img src="image/article3.jpg" alt="Apple Watch">
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-    <footer>
-        <div class="container-wrapper">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h4>Shop & Learn</h4>
-                    <ul>
-                        <li><a href="#">Store</a></li>
-                        <li><a href="#">iPad</a></li>
-                        <li><a href="#">iPhone</a></li>
-                        <li><a href="#">Mac</a></li>
-                        <li><a href="#">Watch</a></li>
-                        <li><a href="#">AirPads</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Account</h4>
-                    <ul>
-                        <li><a href="#">Manage your Apple ID</a></li>
-                        <li><a href="#">Apple Store Account</a></li>
-                        <li><a href="#">iCloud.com</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Apple Values</h4>
-                    <ul>
-                        <li><a href="#">Accessibility</a></li>
-                        <li><a href="#">Enviroment</a></li>
-                        <li><a href="#">Privacy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>About Apple</h4>
-                    <ul>
-                        <li><a href="#">Newscroom</a></li>
-                        <li><a href="#">Career Opportunities</a></li>
-                        <li><a href="#">Investore</a></li>
-                    </ul>
+                <div class="footer-bottom">
+                    <p>Copyright © 2026 Apple Inc. All rights reserved.</p>
+                    <p>Privacy Policy | Terms of Use Sales and Refunds | Legal
+                        Site | Map</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>Copyright © 2026 Apple Inc. All rights reserved.</p>
-                <p>Privacy Policy | Terms of Use Sales and Refunds | Legal Site | Map</p>
-            </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
