@@ -41,6 +41,7 @@ header{
     font-size: 12px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 .header-inner{
     display: flex;
@@ -60,17 +61,24 @@ header{
     font-size: 13px;
 }
 .header-actions{
-    display: flex;
     gap: 15px;
     align-items: center;
     color: rgb(201, 188, 188);
     font-size: 12px;
     order: 4;
     margin-left: auto;
+    flex-shrink: 0;
+    display: inline-block; 
+    margin: 0 8px;
+}
+.header-actions a {
+    white-space: nowrap;
+    flex-shrink: 0;
+    line-height: 1.2;
 }
 .header-actions a:hover{
     color: #fff;
-    font-size: 13px;
+    /* font-size: 13px; */
 }
 .search-icon{
     width: 14px;
@@ -80,7 +88,7 @@ header{
     position: relative;
     cursor: pointer;
     order: 3;
-    margin-left: 75px;
+    margin-left: 70px;
 }
 .search-icon::after{
     content: "";
@@ -377,6 +385,52 @@ header{
 }
 .menu-checkbox{
     display: none;
+}
+.dark-toggle {
+    display: none;
+}
+ .dark-label {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    user-select: none;
+}
+.dark-label::before {
+    content: "☼"; 
+}
+body:has(#dark-toggle:checked) .dark-label::before {
+    content: "⏾";
+}
+/* دارک مود برای بنر (فقط رنگ متن) */
+body:has(#dark-toggle:checked) .main-banner h1,
+body:has(#dark-toggle:checked) .main-banner p {
+    color: #f0f0f0;
+}
+
+/* دارک مود برای بخش‌های محتوا و فوتر */
+body:has(#dark-toggle:checked) .content-section,
+body:has(#dark-toggle:checked) footer {
+    background-color: #1a1a1a !important;
+    color: #f0f0f0 !important;
+}
+
+/* دارک مود برای کارت‌ها (محصولات، مقالات، پرومو) */
+body:has(#dark-toggle:checked) .product-card,
+body:has(#dark-toggle:checked) .article-card,
+body:has(#dark-toggle:checked) .promo-box {
+    background-color: #2a2a2a !important;
+}
+
+/* اگر می‌خوای رنگ متن کارت‌ها هم عوض بشه */
+body:has(#dark-toggle:checked) .card-title,
+body:has(#dark-toggle:checked) .card-price,
+body:has(#dark-toggle:checked) .article-title,
+body:has(#dark-toggle:checked) .article-summery {
+    color: #f0f0f0 !important;
 }
 
 @media (min-width: 500px){
